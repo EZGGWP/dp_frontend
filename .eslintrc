@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "quotes": [2, "single"],
+    "eol-last": "error"
+  },
+  "parser": "@typescript-eslint/parser"
+}
