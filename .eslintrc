@@ -1,7 +1,8 @@
 {
   "rules": {
     "quotes": [2, "single"],
-    "eol-last": "error"
+    "eol-last": "error",
+    "linebreak-style": ["warn", "unix"]
   },
   "parser": "@typescript-eslint/parser"
 }
