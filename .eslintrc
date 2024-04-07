@@ -4,5 +4,6 @@
     "eol-last": "error",
     "linebreak-style": ["warn", "unix"]
   },
-  "parser": "@typescript-eslint/parser"
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["dist/*"]
 }
