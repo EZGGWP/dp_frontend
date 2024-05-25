@@ -3,25 +3,14 @@ import './App.css';
 
 // @ts-ignore
 import Logo from './logo.svg';
+import MainPage from './pages/mainPage';
+// I'm not sure why, but this import only works with "../node_modules" part
+// probably due to webpack config exclusions of node_modules?
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo className="App-logo" alt="logo"/>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainPage/>
   );
 }
 

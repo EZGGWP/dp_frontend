@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.mainBody {
+  background-color: bisque;
+}
+
 .App {
   text-align: center;
 }
