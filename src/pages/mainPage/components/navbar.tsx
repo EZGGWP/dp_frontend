@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import { Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { LoginButton } from './loginButton';
 
 export default () => {
