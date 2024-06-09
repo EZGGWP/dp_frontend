@@ -24,8 +24,7 @@
     "build": "react-scripts build & tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:renderer": "webpack --config webpack.app.js & node dist/renderer.js",
-    "start:server": "ts-node --project tsconfig.json ssr/index.ts",
+    "start:ssr": "webpack --config webpack.ssr.js & webpack --config webpack.react.js & node dist/ssr/main.js",
     "precommit": "lint-staged",
     "prepare": "husky install"
   },

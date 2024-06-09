@@ -1,25 +1,23 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
 const CssExtract = require('mini-css-extract-plugin');
 
 module.exports = {
-  target: 'node',
   mode: 'development',
-  devtool: 'inline-source-map',
-  externalsPresets: {
-    node: true,
-  },
-  externals: [nodeExternals()],
-  entry: './ssr/index.ts',
+  entry: './src/index.tsx',
   output: {
-    filename: 'renderer.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist/client'),
   },
   plugins: [
     new CssExtract({
-      filename: 'resources/style.css',
+      filename: '[name].style.css',
     }),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    }
+  },
   module: {
     rules: [
       {
