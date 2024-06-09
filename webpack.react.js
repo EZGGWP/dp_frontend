@@ -1,19 +1,10 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
 const CssExtract = require('mini-css-extract-plugin');
 
 module.exports = {
-  // target: 'node',
-  // target: 'web',
   mode: 'development',
-  // devtool: 'inline-source-map',
-  // externalsPresets: {
-  //   node: true,
-  // },
-  // externals: [nodeExternals()],
   entry: './src/App.tsx',
   output: {
-    // filename: '[]client.js',
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist/client'),
   },
